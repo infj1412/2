@@ -1,16 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    double num1, num2;
+    int num;
+    printf("구구단을 출력할 숫자를 입력하세요: ");
+    scanf("%d", &num);
 
-    // 사용자로부터 두 숫자 입력 받기
-    printf("첫 번째 숫자를 입력하세요: ");
-    scanf("%lf", &num1);
-    printf("두 번째 숫자를 입력하세요: ");
-    scanf("%lf", &num2);
-
-    // 덧셈 결과 출력
-    printf("결과: %.2lf\n", num1 + num2);
+    for (int i = 1; i <= 9; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
 
     return 0;
 }
